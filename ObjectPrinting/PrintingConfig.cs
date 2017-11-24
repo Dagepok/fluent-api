@@ -1,19 +1,58 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
-using ObjectPrinting.Tests;
+using FluentAssertions.Common;
 
 namespace ObjectPrinting
 {
-    public class PrintingConfig<TOwner>
+    public class PrintingConfig<TOwner> : IPrintingConfig
     {
+        private readonly Dictionary<PropertyInfo, Delegate> customPropertySerialization
+            = new Dictionary<PropertyInfo, Delegate>();
+
+        private readonly Dictionary<Type, Delegate> customTypeSerialization
+            = new Dictionary<Type, Delegate>();
+
+        private readonly Dictionary<Type, CultureInfo> customDigitCultureInfo
+            = new Dictionary<Type, CultureInfo>();
+
+        private readonly HashSet<PropertyInfo> excludedProperties = new HashSet<PropertyInfo>();
+        private readonly HashSet<Type> excludedTypes = new HashSet<Type>();
+        private int stringPropertiesLenght = -1;
+
         public string PrintToString(TOwner obj)
         {
             return PrintToString(obj, 0);
         }
+
+
+        public PropertyPrintingConfig<TOwner, T> Printing<T>()
+        {
+            return new PropertyPrintingConfig<TOwner, T>(this);
+        }
+
+        public PropertyPrintingConfig<TOwner, TPropType> Printing<TPropType>(
+            Expression<Func<TOwner, TPropType>> selector)
+        {
+            return new PropertyPrintingConfig<TOwner, TPropType>(this, selector.GetPropertyInfo());
+        }
+
+        public PrintingConfig<TOwner> Exclude<TPropType>(Expression<Func<TOwner, TPropType>> selector)
+        {
+            excludedProperties.Add(selector.GetPropertyInfo());
+            return this;
+        }
+
+        public PrintingConfig<TOwner> Exclude<T>()
+        {
+            excludedTypes.Add(typeof(T));
+            return this;
+        }
+
 
         private string PrintToString(object obj, int nestingLevel)
         {
@@ -26,6 +65,7 @@ namespace ObjectPrinting
                 typeof(int), typeof(double), typeof(float), typeof(string),
                 typeof(DateTime), typeof(TimeSpan)
             };
+
             if (finalTypes.Contains(obj.GetType()))
                 return obj + Environment.NewLine;
 
@@ -34,32 +74,97 @@ namespace ObjectPrinting
             var type = obj.GetType();
             sb.AppendLine(type.Name);
             foreach (var propertyInfo in type.GetProperties())
+            {
+                if (!IsNeedPrint(propertyInfo)) continue;
+
                 sb.Append(identation + propertyInfo.Name + " = " +
-                          PrintToString(propertyInfo.GetValue(obj),
-                              nestingLevel + 1));
+                          PrintProperty(obj, propertyInfo, nestingLevel));
+            }
             return sb.ToString();
         }
 
-        public PrintingConfig<TOwner> Exclude<T>()
+        private string PrintProperty(object obj, PropertyInfo propertyInfo, int nestingLevel)
         {
-            return this;
-        }
-
-        public PropertyPrintingConfig<TOwner, T> Printing<T>()
-        {
-            return new PropertyPrintingConfig<TOwner, T>(this);
-        }
 
 
-        public PropertyPrintingConfig<TOwner, TPropType> Printing<TPropType>(Expression<Func<TOwner, TPropType>> selector)
-        {
-            return new PropertyPrintingConfig<TOwner, TPropType>(this);
+            if (customPropertySerialization.ContainsKey(propertyInfo))
+                return customPropertySerialization[propertyInfo]
+                           .DynamicInvoke(propertyInfo.GetValue(obj))
+                           + Environment.NewLine;
+
+
+            if (customTypeSerialization.ContainsKey(propertyInfo.PropertyType))
+                return customTypeSerialization[propertyInfo.PropertyType]
+                           .DynamicInvoke(propertyInfo.GetValue(obj))
+                           + Environment.NewLine;
+
+            if (customDigitCultureInfo.ContainsKey(propertyInfo.PropertyType))
+                return ((IFormattable)propertyInfo.GetValue(obj))
+                    .ToString("", customDigitCultureInfo[propertyInfo.PropertyType])
+                    + Environment.NewLine;
+
+            if (propertyInfo.PropertyType == typeof(string) && stringPropertiesLenght != -1)
+                return ((string)propertyInfo.GetValue(obj)).Substring(0, stringPropertiesLenght)
+                    + Environment.NewLine;
+
+            return PrintToString(propertyInfo.GetValue(obj),
+                nestingLevel + 1);
         }
 
-        public PrintingConfig<TOwner> Exclude<TPropType>(Expression<Func<TOwner, TPropType>> selector)
+        private bool IsNeedPrint(PropertyInfo propertyInfo)
         {
-            return this;
+            if (excludedProperties.Contains(propertyInfo))
+                return false;
+            return !excludedTypes.Contains(propertyInfo.PropertyType);
         }
-        
+
+
+        private void AddCustomTypeSerialization(Type type, Delegate func)
+        {
+            if (customTypeSerialization.ContainsKey(type))
+                customTypeSerialization[type] = func;
+            else
+                customTypeSerialization.Add(type, func);
+        }
+
+        private void AddCustomPropertySerialization(PropertyInfo propertyName, Delegate func)
+        {
+            if (customPropertySerialization.ContainsKey(propertyName))
+                customPropertySerialization[propertyName] = func;
+            else
+                customPropertySerialization.Add(propertyName, func);
+        }
+
+        private void AddCulture(Type type, CultureInfo culture)
+        {
+            if (customDigitCultureInfo.ContainsKey(type))
+                customDigitCultureInfo[type] = culture;
+            else
+                customDigitCultureInfo.Add(type, culture);
+        }
+
+        void IPrintingConfig.AddCulture(Type type, CultureInfo culture)
+            => AddCulture(type, culture);
+
+        void IPrintingConfig.AddCustomPropertySerialization(PropertyInfo propertyName, Delegate func)
+            => AddCustomPropertySerialization(propertyName, func);
+
+        void IPrintingConfig.AddCustomTypeSerialization(Type type, Delegate func)
+            => AddCustomTypeSerialization(type, func);
+
+        void IPrintingConfig.SetStringPropertiesLenght(int length)
+            => SetStringPropertiesLenght(length);
+
+        private void SetStringPropertiesLenght(int length) => stringPropertiesLenght = length;
+    }
+
+
+
+    internal interface IPrintingConfig
+    {
+        void AddCulture(Type type, CultureInfo culture);
+        void AddCustomPropertySerialization(PropertyInfo propertyName, Delegate func);
+        void AddCustomTypeSerialization(Type type, Delegate func);
+        void SetStringPropertiesLenght(int length);
     }
 }

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ffd8550-b236-420e-bd1b-e0527998f308" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.fluent-api/.idea/indexLayout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.fluent-api/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.fluent-api/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.fluent-api/riderModule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectPrinting/ObjectPrinting.csproj" afterPath="$PROJECT_DIR$/ObjectPrinting/ObjectPrinting.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectPrinting/PrintingConfig.cs" afterPath="$PROJECT_DIR$/ObjectPrinting/PrintingConfig.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfig.cs" afterPath="$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfig.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfigExtensions.cs" afterPath="$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfigExtensions.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectPrinting/Tests/ObjectPrinterAcceptanceTests.cs" afterPath="$PROJECT_DIR$/ObjectPrinting/Tests/ObjectPrinterAcceptanceTests.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectPrinting/Tests/Person.cs" afterPath="$PROJECT_DIR$/ObjectPrinting/Tests/Person.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fluent-api.sln" afterPath="$PROJECT_DIR$/fluent-api.sln" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.4214582">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="PropertyPrintingConfigExtensions.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfigExtensions.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+                  <folding>
+                    <marker date="1511557692719" expanded="true" signature="99:1113" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PropertyPrintingConfig.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfig.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <folding>
+                    <marker date="1511557691033" expanded="false" signature="6:55" ph="..." />
+                    <marker date="1511557691033" expanded="true" signature="1207:1274" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PrintingConfig.cs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ObjectPrinting/PrintingConfig.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="104">
+                  <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+                  <folding>
+                    <marker date="1511557711102" expanded="false" signature="6:200" ph="..." />
+                    <marker date="1511557711102" expanded="true" signature="226:5280" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="286:5013" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="914:976" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="1041:1125" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="1262:1382" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="1486:1595" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="1647:1734" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="1803:2750" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="1984:2126" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="2477:2706" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="2845:3444" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="3505:3685" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="3761:3968" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="4063:4306" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="4371:4581" ph="{...}" />
+                    <marker date="1511557711102" expanded="true" signature="5055:5278" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ObjectPrinter.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ObjectPrinting/ObjectPrinter.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <folding>
+                    <marker date="1510751488932" expanded="true" signature="57:170" ph="{...}" />
+                    <marker date="1510751488932" expanded="true" signature="106:167" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="ObjectPrinterAcceptanceTests.cs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ObjectPrinting/Tests/ObjectPrinterAcceptanceTests.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-540">
+                  <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                  <folding>
+                    <marker date="1511559894852" expanded="false" signature="6:117" ph="..." />
+                    <marker date="1511559894852" expanded="true" signature="149:4123" ph="{...}" />
+                    <marker date="1511559894852" expanded="true" signature="215:4121" ph="{...}" />
+                    <marker date="1511559894852" expanded="true" signature="265:487" ph="{...}" />
+                    <marker date="1511559894852" expanded="true" signature="563:1833" ph="{...}" />
+                    <marker date="1511559894852" expanded="true" signature="1910:2350" ph="{...}" />
+                    <marker date="1511559894852" expanded="true" signature="2428:2776" ph="{...}" />
+                    <marker date="1511559894852" expanded="true" signature="2850:3149" ph="{...}" />
+                    <marker date="1511559894852" expanded="true" signature="3235:3642" ph="{...}" />
+                    <marker date="1511559894852" expanded="true" signature="3723:4115" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Microsoft.Common.CurrentVersion.targets" pinned="false" current-in-tab="false">
+            <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/Microsoft.Common.CurrentVersion.targets">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60795">
+                  <caret line="4053" column="38" lean-forward="false" selection-start-line="4053" selection-start-column="38" selection-end-line="4053" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ObjectPrinting/PrintingConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ObjectPrinting/ObjectPrinter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1F863D9-9421-4006-AED0-BD17AB690B95/7d/0a7af57d/MethodBase.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ObjectPrinting/Tests/ObjectPrinterAcceptanceTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ObjectPrinting/ObjectExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfigExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfig.cs" />
+        <option value="$PROJECT_DIR$/ObjectPrinting/PrintingConfig.cs" />
+        <option value="$PROJECT_DIR$/ObjectPrinting/Tests/ObjectPrinterAcceptanceTests.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="fluent-api (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_OUTPUT_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ffd8550-b236-420e-bd1b-e0527998f308" name="Default" comment="" />
+      <created>1511425745855</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511425745855</updated>
+      <workItem from="1511425764764" duration="9711000" />
+      <workItem from="1511547942259" duration="5694000" />
+      <workItem from="1511559515716" duration="404000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15809000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12135417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39874083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfigExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <marker date="1511557692719" expanded="true" signature="99:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1511557691033" expanded="false" signature="6:55" ph="..." />
+            <marker date="1511557691033" expanded="true" signature="1207:1274" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/ObjectPrinter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1510751488932" expanded="true" signature="57:170" ph="{...}" />
+            <marker date="1510751488932" expanded="true" signature="106:167" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PrintingConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="90" column="33" lean-forward="true" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+          <folding>
+            <marker date="1511557711102" expanded="false" signature="6:200" ph="..." />
+            <marker date="1511557711102" expanded="true" signature="226:5280" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="286:5013" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="914:976" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1041:1125" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1262:1382" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1486:1595" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1647:1734" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1803:2750" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1984:2126" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="2477:2706" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="2845:3444" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="3505:3685" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="3761:3968" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="4063:4306" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="4371:4581" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="5055:5278" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/Tests/ObjectPrinterAcceptanceTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511559894852" expanded="false" signature="6:117" ph="..." />
+            <marker date="1511559894852" expanded="true" signature="149:4123" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="215:4121" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="265:487" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="563:1833" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="1910:2350" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="2428:2776" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="2850:3149" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="3235:3642" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="3723:4115" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/Microsoft.Common.CurrentVersion.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60795">
+          <caret line="4053" column="38" lean-forward="true" selection-start-line="4053" selection-start-column="38" selection-end-line="4053" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfigExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511557692719" expanded="true" signature="99:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <marker date="1511557691033" expanded="false" signature="6:55" ph="..." />
+            <marker date="1511557691033" expanded="true" signature="1207:1274" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PrintingConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <marker date="1511557711102" expanded="false" signature="6:200" ph="..." />
+            <marker date="1511557711102" expanded="true" signature="226:5280" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="286:5013" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="914:976" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1041:1125" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1262:1382" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1486:1595" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1647:1734" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1803:2750" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1984:2126" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="2477:2706" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="2845:3444" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="3505:3685" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="3761:3968" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="4063:4306" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="4371:4581" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="5055:5278" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/Tests/ObjectPrinterAcceptanceTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <marker date="1511559894852" expanded="false" signature="6:117" ph="..." />
+            <marker date="1511559894852" expanded="true" signature="149:4123" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="215:4121" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="265:487" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="563:1833" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="1910:2350" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="2428:2776" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="2850:3149" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="3235:3642" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="3723:4115" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/ObjectPrinting.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/ObjectExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/ObjectPrinter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1510751488932" expanded="true" signature="57:170" ph="{...}" />
+            <marker date="1510751488932" expanded="true" signature="106:167" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1511557691033" expanded="false" signature="6:55" ph="..." />
+            <marker date="1511557691033" expanded="true" signature="1207:1274" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1F863D9-9421-4006-AED0-BD17AB690B95/7d/0a7af57d/MethodBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2350">
+          <caret line="202" column="24" lean-forward="false" selection-start-line="202" selection-start-column="18" selection-end-line="202" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PropertyPrintingConfigExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <marker date="1511557692719" expanded="true" signature="99:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/Microsoft.Common.CurrentVersion.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60795">
+          <caret line="4053" column="38" lean-forward="false" selection-start-line="4053" selection-start-column="38" selection-end-line="4053" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/PrintingConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+          <folding>
+            <marker date="1511557711102" expanded="false" signature="6:200" ph="..." />
+            <marker date="1511557711102" expanded="true" signature="226:5280" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="286:5013" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="914:976" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1041:1125" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1262:1382" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1486:1595" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1647:1734" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1803:2750" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="1984:2126" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="2477:2706" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="2845:3444" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="3505:3685" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="3761:3968" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="4063:4306" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="4371:4581" ph="{...}" />
+            <marker date="1511557711102" expanded="true" signature="5055:5278" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectPrinting/Tests/ObjectPrinterAcceptanceTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1511559894852" expanded="false" signature="6:117" ph="..." />
+            <marker date="1511559894852" expanded="true" signature="149:4123" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="215:4121" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="265:487" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="563:1833" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="1910:2350" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="2428:2776" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="2850:3149" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="3235:3642" ph="{...}" />
+            <marker date="1511559894852" expanded="true" signature="3723:4115" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
