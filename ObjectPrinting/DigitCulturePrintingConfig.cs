@@ -19,14 +19,21 @@ namespace ObjectPrinting
             return ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig;
         }
 
-
-        public PrintingConfig<TOwner> InstalledUiCulture()
+        public PrintingConfig<TOwner> RussianCulture()
         {
             ((IPrintingConfig)
-                    ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig)
-                .AddCulture(typeof(TDigit), CultureInfo.InstalledUICulture);
-            return ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig;
+                    ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig)
+                .AddCulture(typeof(TDigit), new CultureInfo("ru-Ru"));
+            return ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig;
         }
+        public PrintingConfig<TOwner> FrenchCulture()
+        {
+            ((IPrintingConfig)
+                    ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig)
+                .AddCulture(typeof(TDigit), new CultureInfo("fr-FR"));
+            return ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig;
+        }
+
 
         public PrintingConfig<TOwner> CustomCulture(string culture)
         {
