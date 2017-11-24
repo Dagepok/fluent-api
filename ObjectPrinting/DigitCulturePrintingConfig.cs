@@ -23,7 +23,7 @@ namespace ObjectPrinting
         {
             ((IPrintingConfig)
                     ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig)
-                .AddCulture(typeof(TDigit), new CultureInfo("ru-Ru"));
+                .AddCulture(typeof(TDigit), new CultureInfo("ru-RU"));
             return ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig;
         }
         public PrintingConfig<TOwner> FrenchCulture()
