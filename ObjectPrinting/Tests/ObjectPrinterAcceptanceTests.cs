@@ -52,7 +52,7 @@ namespace ObjectPrinting.Tests
 
             result.Should()
                 .Be(
-                    "Person\r\n\tId = Guid\r\n\tName = Alex\r\n\tSecondName = Ivanov\r\n\tHeight = 170,4\r\n\tAge = 19\r\n");
+                    "Person\r\n\tId = 00000000-0000-0000-0000-000000000000\r\n\tName = Alex\r\n\tSecondName = Ivanov\r\n\tHeight = 170,4\r\n\tAge = 19\r\n");
         }
 
         //1
@@ -66,10 +66,10 @@ namespace ObjectPrinting.Tests
             Console.WriteLine(result);
 
             result.Should().Be("Person\r\n" +
-                                "\tId = Guid\r\n" +
+                                "\tId = 00000000-0000-0000-0000-000000000000\r\n" +
                                 "\tHeight = 170,4\r\n" +
                                 "\tAge = 19\r\n" +
-                                "\tAddress = Address\r\n" +
+                                "\tAddress\r\n" +
                                     "\t\tHouse = 1\r\n");
         }
 
@@ -83,12 +83,12 @@ namespace ObjectPrinting.Tests
             var result = printer.PrintToString(person);
 
             result.Should().Be("Person\r\n" +
-                                   "\tId = Guid\r\n" +
+                                   "\tId = 00000000-0000-0000-0000-000000000000\r\n" +
                                    "\tName = name is Alex\r\n" +
                                    "\tSecondName = Ivanov\r\n" +
                                    "\tHeight = 170,4\r\n" +
                                    "\tAge = 19\r\n" +
-                                   "\tAddress = Address\r\n" +
+                                   "\tAddress\r\n" +
                                         "\t\tCity = Yekaterinburg\r\n" +
                                         "\t\tStreet = Pushkina\r\n" +
                                         "\t\tHouse = 1\r\n");
@@ -104,12 +104,12 @@ namespace ObjectPrinting.Tests
             var result = printer.PrintToString(person);
 
             result.Should().Be("Person\r\n" +
-                                   "\tId = Guid\r\n" +
+                                   "\tId = 00000000-0000-0000-0000-000000000000\r\n" +
                                    "\tName = Alex\r\n" +
                                    "\tSecondName = Ivanov\r\n" +
                                    "\tHeight = about 170,4\r\n" +
                                    "\tAge = 19\r\n" +
-                                   "\tAddress = Address\r\n" +
+                                   "\tAddress\r\n" +
                                        "\t\tCity = Yekaterinburg\r\n" +
                                        "\t\tStreet = Pushkina\r\n" +
                                        "\t\tHouse = 1\r\n");
@@ -125,12 +125,12 @@ namespace ObjectPrinting.Tests
             var result = printer.PrintToString(person);
 
             result.Should().Be("Person\r\n" +
-                                   "\tId = Guid\r\n" +
+                                   "\tId = 00000000-0000-0000-0000-000000000000\r\n" +
                                    "\tName = Alex\r\n" +
                                    "\tSecondName = Ivanov\r\n" +
                                    "\tHeight = 170.4\r\n" +
                                    "\tAge = 19\r\n" +
-                                   "\tAddress = Address\r\n" +
+                                   "\tAddress\r\n" +
                                        "\t\tCity = Yekaterinburg\r\n" +
                                        "\t\tStreet = Pushkina\r\n" +
                                        "\t\tHouse = 1\r\n");
@@ -146,12 +146,12 @@ namespace ObjectPrinting.Tests
             var result = printer.PrintToString(person);
 
             result.Should().Be("Person\r\n" +
-                                   "\tId = Guid\r\n" +
+                                   "\tId = 00000000-0000-0000-0000-000000000000\r\n" +
                                    "\tName = Ale\r\n" +
                                    "\tSecondName = Iva\r\n" +
                                    "\tHeight = 170,4\r\n" +
                                    "\tAge = 19\r\n" +
-                                   "\tAddress = Address\r\n" +
+                                   "\tAddress\r\n" +
                                        "\t\tCity = Yek\r\n" +
                                        "\t\tStreet = Pus\r\n" +
                                        "\t\tHouse = 1\r\n");
@@ -164,12 +164,12 @@ namespace ObjectPrinting.Tests
             var result = person.PrintToString();
 
             result.Should().Be("Person\r\n" +
-                                    "\tId = Guid\r\n" +
+                                    "\tId = 00000000-0000-0000-0000-000000000000\r\n" +
                                     "\tName = Alex\r\n" +
                                     "\tSecondName = Ivanov\r\n" +
                                     "\tHeight = 170,4\r\n" +
                                     "\tAge = 19\r\n" +
-                                    "\tAddress = Address\r\n" +
+                                    "\tAddress\r\n" +
                                         "\t\tCity = Yekaterinburg\r\n" +
                                         "\t\tStreet = Pushkina\r\n" +
                                         "\t\tHouse = 1\r\n");
@@ -182,7 +182,7 @@ namespace ObjectPrinting.Tests
             var result = person.PrintToString(x => x.Exclude(p => p.Address));
 
             result.Should().Be("Person\r\n" +
-                                   "\tId = Guid\r\n" +
+                                   "\tId = 00000000-0000-0000-0000-000000000000\r\n" +
                                    "\tName = Alex\r\n" +
                                    "\tSecondName = Ivanov\r\n" +
                                    "\tHeight = 170,4\r\n" +

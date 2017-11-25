@@ -11,6 +11,11 @@ namespace ObjectPrinting
 {
     public class PrintingConfig<TOwner> : IPrintingConfig
     {
+        private static readonly Type[] FinalTypes = {
+            typeof(int), typeof(double), typeof(float), typeof(string),
+            typeof(DateTime), typeof(TimeSpan), typeof(Guid)
+        };
+
         private readonly Dictionary<PropertyInfo, Delegate> customPropertySerialization
             = new Dictionary<PropertyInfo, Delegate>();
 
@@ -50,17 +55,12 @@ namespace ObjectPrinting
 
         private string PrintToString(object obj, int nestingLevel)
         {
+
             //TODO apply configurations
             if (obj == null)
                 return "null" + Environment.NewLine;
 
-            var finalTypes = new[]
-            {
-                typeof(int), typeof(double), typeof(float), typeof(string),
-                typeof(DateTime), typeof(TimeSpan)
-            };
-
-            if (finalTypes.Contains(obj.GetType()))
+            if (FinalTypes.Contains(obj.GetType()))
                 return obj + Environment.NewLine;
 
             var identation = new string('\t', nestingLevel + 1);
@@ -70,8 +70,11 @@ namespace ObjectPrinting
             foreach (var propertyInfo in type.GetProperties())
             {
                 if (IsExcluded(propertyInfo)) continue;
-                sb.Append(identation + propertyInfo.Name + " = " +
-                          PrintProperty(obj, propertyInfo, nestingLevel));
+                sb.Append(identation
+                    + (FinalTypes.Contains(propertyInfo.PropertyType)
+                                ? propertyInfo.Name + " = "
+                                : "")
+                    + PrintProperty(obj, propertyInfo, nestingLevel));
             }
             return sb.ToString();
         }
