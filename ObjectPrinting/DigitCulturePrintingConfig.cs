@@ -4,51 +4,42 @@ namespace ObjectPrinting
 {
     public class DigitCulturePrintingConfig<TOwner, TDigit>
     {
-        private readonly PropertyPrintingConfig<TOwner, TDigit> printingConfig;
+        private readonly IPrintingConfig printingConfig;
 
-        public DigitCulturePrintingConfig(PropertyPrintingConfig<TOwner, TDigit> printingConfig)
+        public DigitCulturePrintingConfig(IPropertyPrintingConfig<TOwner> propertyPrintingConfig)
         {
-            this.printingConfig = printingConfig;
+            printingConfig = propertyPrintingConfig.PrintingConfig;
         }
 
         public PrintingConfig<TOwner> InvariantCulture()
         {
-            ((IPrintingConfig)
-                    ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig)
-                .AddCulture(typeof(TDigit), CultureInfo.InvariantCulture);
-            return ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig;
+            printingConfig.AddCulture(typeof(TDigit), CultureInfo.InvariantCulture);
+            return (PrintingConfig<TOwner>)printingConfig;
         }
 
         public PrintingConfig<TOwner> RussianCulture()
         {
-            ((IPrintingConfig)
-                    ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig)
-                .AddCulture(typeof(TDigit), new CultureInfo("ru-RU"));
-            return ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig;
+            printingConfig.AddCulture(typeof(TDigit),new CultureInfo("ru-RU"));
+            return (PrintingConfig<TOwner>)printingConfig;
         }
+
         public PrintingConfig<TOwner> FrenchCulture()
         {
-            ((IPrintingConfig)
-                    ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig)
-                .AddCulture(typeof(TDigit), new CultureInfo("fr-FR"));
-            return ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig;
+            printingConfig.AddCulture(typeof(TDigit),new CultureInfo("fr-FR"));
+            return (PrintingConfig<TOwner>)printingConfig;
         }
 
 
         public PrintingConfig<TOwner> CustomCulture(string culture)
         {
-            ((IPrintingConfig)
-                    ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig)
-                .AddCulture(typeof(TDigit), new CultureInfo(culture));
-            return ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig;
+            printingConfig.AddCulture(typeof(TDigit), new CultureInfo(culture));
+            return (PrintingConfig<TOwner>)printingConfig;
         }
 
         public PrintingConfig<TOwner> CustomCulture(CultureInfo culture)
         {
-            ((IPrintingConfig)
-                    ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig)
-                .AddCulture(typeof(TDigit), culture);
-            return ((IPropertyPrintingConfig<TOwner>) printingConfig).PrintingConfig;
+            printingConfig.AddCulture(typeof(TDigit), culture);
+            return (PrintingConfig<TOwner>)printingConfig;
         }
     }
 }

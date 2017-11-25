@@ -56,12 +56,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DigitCulturePrintingConfig.cs" />
+    <Compile Include="IPrintingConfig.cs" />
+    <Compile Include="PropertyPrintingConfig\IPropertyPrintingConfig.cs" />
     <Compile Include="ObjectExtensions.cs" />
     <Compile Include="ObjectPrinter.cs" />
     <Compile Include="PrintingConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PropertyPrintingConfig.cs" />
-    <Compile Include="PropertyPrintingConfigExtensions.cs" />
+    <Compile Include="PropertyPrintingConfig\PropertyPrintingConfig.cs" />
+    <Compile Include="PropertyPrintingConfig\PropertyPrintingConfigExtensions.cs" />
+    <Compile Include="Tests\Address.cs" />
     <Compile Include="Tests\ObjectPrinterAcceptanceTests.cs" />
     <Compile Include="Tests\Person.cs" />
   </ItemGroup>

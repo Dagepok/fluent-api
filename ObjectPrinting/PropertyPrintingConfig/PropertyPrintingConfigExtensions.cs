@@ -3,7 +3,6 @@
 namespace ObjectPrinting
 {
     public static class PropertyPrintingConfigExtensions
-
     {
         public static DigitCulturePrintingConfig<TOwner, int> SetDigitsCulter<TOwner>
             (this PropertyPrintingConfig<TOwner, int> printingConfig)
@@ -22,9 +21,11 @@ namespace ObjectPrinting
         {
             if (lenght <= 0)
                 throw new ArgumentException("Length should be positive");
+
             var config = ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig;
             ((IPrintingConfig)config).SetStringPropertiesLenght(lenght);
-            return ((IPropertyPrintingConfig<TOwner>)printingConfig).PrintingConfig;
+
+            return config;
         } 
 
 

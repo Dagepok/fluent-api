@@ -25,21 +25,15 @@ namespace ObjectPrinting
         private int stringPropertiesLenght = -1;
 
         public string PrintToString(TOwner obj)
-        {
-            return PrintToString(obj, 0);
-        }
+            => PrintToString(obj, 0);
 
 
         public PropertyPrintingConfig<TOwner, T> Printing<T>()
-        {
-            return new PropertyPrintingConfig<TOwner, T>(this);
-        }
+            => new PropertyPrintingConfig<TOwner, T>(this);
 
         public PropertyPrintingConfig<TOwner, TPropType> Printing<TPropType>(
             Expression<Func<TOwner, TPropType>> selector)
-        {
-            return new PropertyPrintingConfig<TOwner, TPropType>(this, selector.GetPropertyInfo());
-        }
+            => new PropertyPrintingConfig<TOwner, TPropType>(this, selector.GetPropertyInfo());
 
         public PrintingConfig<TOwner> Exclude<TPropType>(Expression<Func<TOwner, TPropType>> selector)
         {
@@ -75,8 +69,7 @@ namespace ObjectPrinting
             sb.AppendLine(type.Name);
             foreach (var propertyInfo in type.GetProperties())
             {
-                if (!IsNeedPrint(propertyInfo)) continue;
-
+                if (IsExcluded(propertyInfo)) continue;
                 sb.Append(identation + propertyInfo.Name + " = " +
                           PrintProperty(obj, propertyInfo, nestingLevel));
             }
@@ -85,24 +78,18 @@ namespace ObjectPrinting
 
         private string PrintProperty(object obj, PropertyInfo propertyInfo, int nestingLevel)
         {
-
-
             if (customPropertySerialization.ContainsKey(propertyInfo))
                 return customPropertySerialization[propertyInfo]
                            .DynamicInvoke(propertyInfo.GetValue(obj))
                            + Environment.NewLine;
-
-
             if (customTypeSerialization.ContainsKey(propertyInfo.PropertyType))
                 return customTypeSerialization[propertyInfo.PropertyType]
                            .DynamicInvoke(propertyInfo.GetValue(obj))
                            + Environment.NewLine;
-
             if (customDigitCultureInfo.ContainsKey(propertyInfo.PropertyType))
                 return ((IFormattable)propertyInfo.GetValue(obj))
                     .ToString("", customDigitCultureInfo[propertyInfo.PropertyType])
                     + Environment.NewLine;
-
             if (propertyInfo.PropertyType == typeof(string) && stringPropertiesLenght != -1)
                 return ((string)propertyInfo.GetValue(obj)).Substring(0, stringPropertiesLenght)
                     + Environment.NewLine;
@@ -111,13 +98,9 @@ namespace ObjectPrinting
                 nestingLevel + 1);
         }
 
-        private bool IsNeedPrint(PropertyInfo propertyInfo)
-        {
-            if (excludedProperties.Contains(propertyInfo))
-                return false;
-            return !excludedTypes.Contains(propertyInfo.PropertyType);
-        }
-
+        private bool IsExcluded(PropertyInfo propertyInfo)
+            => excludedProperties.Contains(propertyInfo)
+               || excludedTypes.Contains(propertyInfo.PropertyType);
 
         private void AddCustomTypeSerialization(Type type, Delegate func)
         {
@@ -156,15 +139,5 @@ namespace ObjectPrinting
             => SetStringPropertiesLenght(length);
 
         private void SetStringPropertiesLenght(int length) => stringPropertiesLenght = length;
-    }
-
-
-
-    internal interface IPrintingConfig
-    {
-        void AddCulture(Type type, CultureInfo culture);
-        void AddCustomPropertySerialization(PropertyInfo propertyName, Delegate func);
-        void AddCustomTypeSerialization(Type type, Delegate func);
-        void SetStringPropertiesLenght(int length);
     }
 }

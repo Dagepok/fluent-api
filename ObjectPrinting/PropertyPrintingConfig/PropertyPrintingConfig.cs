@@ -9,13 +9,13 @@ namespace ObjectPrinting
         private readonly PrintingConfig<TOwner> printingConfig;
         private readonly PropertyInfo propertyInfo;
 
+        PrintingConfig<TOwner> IPropertyPrintingConfig<TOwner>.PrintingConfig => printingConfig;
+
         public PropertyPrintingConfig(PrintingConfig<TOwner> printingConfig, PropertyInfo propertyInfo = null)
         {
             this.printingConfig = printingConfig;
             this.propertyInfo = propertyInfo;
         }
-
-        PrintingConfig<TOwner> IPropertyPrintingConfig<TOwner>.PrintingConfig => printingConfig;
 
         public PrintingConfig<TOwner> Using(Func<TPropType, string> func)
         {
@@ -27,14 +27,8 @@ namespace ObjectPrinting
         }
 
         public PrintingConfig<TOwner> Using(CultureInfo culture)
-        {
-            return printingConfig;
-        }
+            => printingConfig;
     }
+    
 
-
-    public interface IPropertyPrintingConfig<TOwner>
-    {
-        PrintingConfig<TOwner> PrintingConfig { get; }
-    }
 }
